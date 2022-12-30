@@ -1,0 +1,18 @@
+если прописать функции скобочки то мы запускаем ее, а если не ставим то мы отдаем ее кому то другому кто ее запустит
+
+onClick - вешает клик на элемент
+синтаксис: onClick = { () = > alert}
+пример: <button onClick = { () = > alert}> Add post </button>
+
+
+-в реакте у нас есть DOM и VirtualDOM 
+Мы не имеем право лезть в DOM напрямую,потому что DOM взаимодействует с VirtualDOM
+Поэтому мы сначала создаем ссылку, потом говорим ссылка ты привязываешься через ref к textarea 
+	создание ссылки:
+		let newPostElement = React.createRef();
+	привязываем ссылку через ref:
+		<textarea ref={newPOstElement}></textarea>
+
+чтобы обратиться к value элемента пишем:
+	let text = newPostElement.current.value;
+	current ссылается на нативный html элемент

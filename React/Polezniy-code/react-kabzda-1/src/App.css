@@ -1,0 +1,19 @@
+.wrapper{ 
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas:
+    "header header"
+    "navbar profile";
+}
+
+.wrapper-content{
+    grid-area: profile;
+    background-color: greenyellow;
+
+}
+body{
+    background-color: lightgrey;
+}

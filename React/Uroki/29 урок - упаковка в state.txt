@@ -1,0 +1,24 @@
+хранить данные в index js это какое то буржуйстуво поэтому мы создали отдельную папку с файлом state js 
+внутри которого хранятся все массивы
+let state = {
+    ProfilePage:{
+        posts:[
+            {id: 1, message: 'I love bebra', likes: 4 },
+            {id: 1, message: 'fuck the police!', likes: 100 },
+            {id: 1, message: 'oh shit, here we go again', likes: 0 },
+            {id: 1, message: 'Grove Street - Home', likes: 99999 }
+        ]
+    },
+    DialogsPage:{
+        users:[
+            {id: 1, name:'Big smoke'},
+            {id: 2, name:'Rider'},
+            {id: 3, name:'Sweet'}
+        ],
+        messages:[
+            {id: 1, message:'I`ll take two number NIIIne, number NiiIIIineee LAAAAAARGE'},
+            {id: 2, message:'i`m fucking genius'},
+            {id: 3, message:'oh no, ambulance'}
+        ],
+    }
+}
