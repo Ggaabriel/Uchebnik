@@ -1,9 +1,11 @@
 .header{
     background-color: brown;
     grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header img{
-    width: 100px;
-    padding-left: 50px;
+    height: 100%;
 }

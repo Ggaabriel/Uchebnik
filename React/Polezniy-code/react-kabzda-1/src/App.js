@@ -9,8 +9,8 @@ import Profile from './components/Profile/Profile';
 
 
 const App = (props) => {
-  return (<BrowserRouter>
-
+  return (
+  <BrowserRouter>
     <div className="wrapper">
         <Header />
         <Navbar />
