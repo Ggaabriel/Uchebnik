@@ -10,9 +10,7 @@
     position: sticky;
     bottom: 0;
     background-color: blanchedalmond;
-    height: 70px;
-    display: flex;
-    align-items: center;
+    padding: 15px 15px;
 }
 #textArea{
     font-size: 25px;
@@ -24,4 +22,6 @@
 }
 .messages{
     overflow: auto;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }

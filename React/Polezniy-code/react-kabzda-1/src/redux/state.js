@@ -20,175 +20,15 @@ let store = {
                 {id: 1, message:'I`ll take two number NIIIne, number NiiIIIineee LAAAAAARGE'},
                 {id: 2, message:'i`m fucking genius'},
                 {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'},
-                {id: 3, message:'oh no, ambulance'},
-                {id: 2, message:'i`m fucking genius'}
-
             ],
+            messageText:''
         }
     },
     reRender() {
 
     },
     dispatch(action){
-        if(action.type === 'ADD-POST'){
+        if(action.type === ADD_POST){
             let newPost = {
             id: 5,
             message: this.state.ProfilePage.newPostText,
@@ -198,8 +38,21 @@ let store = {
         this.state.ProfilePage.newPostText = "";
         this.reRender(this.state);
         }
-        else if(action.type === 'UPDATE-POST-TEXT'){
+        else if(action.type === UPDATE_POST_TEXT){
             this.state.ProfilePage.newPostText = action.newText;
+            this.reRender(this.state);
+        }
+        else if(action.type === MESSAGE_ADD){
+            let message = {
+                id: 3,
+                message:this.state.DialogsPage.messageText
+            }
+            this.state.DialogsPage.messages.push(message);
+            this.state.DialogsPage.messageText = '';
+            this.reRender(this.state)
+        }
+        else if(action.type === NEW_MESSAGE_TEXT){
+            this.state.DialogsPage.messageText = action.messageText;
             this.reRender(this.state);
         }
     },
@@ -209,10 +62,12 @@ let store = {
 }
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
-export const addPostActionCreator = () => ({type:ADD_POST});
-export const updatePostTextActionCreator = (newText) => ({type:UPDATE_POST_TEXT,newText:newText})
-
-
+const MESSAGE_ADD = 'MESSAGE-ADD';
+const NEW_MESSAGE_TEXT = 'NEW-MESSAGE-TEXT'
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const updatePostTextActionCreator = (newText) => ({type: UPDATE_POST_TEXT, newText: newText})
+export const messageAddCreator = () => ({type: MESSAGE_ADD});
+export const newMessageTextCreator = (messageText) => ({type: NEW_MESSAGE_TEXT, messageText: messageText});
 
 
 window.store = store;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { messageAddCreator, newMessageTextCreator } from '../../redux/state';
 import classes from './Dialogs.module.css'
 import Message from './messages/Message';
 import Users from './Users/Users';
@@ -8,25 +9,29 @@ const Dialogs = (props) => {
     const sendMessage = (event) => {
         if (event.keyCode === 13) {
             event.preventDefault();
-            console.log('Отправить сообщение')
+            props.dispatch(messageAddCreator())
         }
-        var event = event;
-        var getElement = event.target;
-        getElement.style.height = "auto";
-        getElement.style.height = Math.max(getElement.scrollHeight, getElement.offsetHeight) + "px"
+        
+    }
+    const changeText = (event) => {
+        event.target.style.height = "auto";
+        event.target.style.height = Math.max(event.target.scrollHeight, event.target.offsetHeight) + "px"
+        props.dispatch(newMessageTextCreator(event.target.value));
     }
 
-    let usersItems = props.state.users.map(elem => <Users id={elem.id} name={elem.name} />);
-    let messagesItems = props.state.messages.map(elem => <Message id={elem.id} message={elem.message} />);
+    let usersItems = props.DialogsPage.users.map(elem => <Users id={elem.id} name={elem.name} />);
+    let messagesItems = props.DialogsPage.messages.map(elem => <Message id={elem.id} message={elem.message} />);
     return (
         <div className={classes.dialogs}>
             <div className={classes.users}>
                 {usersItems}
             </div>
             <div className={classes.messages}>
-                {messagesItems}
+                <div>
+                    {messagesItems}
+                </div>
                 <div className={classes.messageArea}>
-                    <textarea onKeyDown={sendMessage} placeholder='Напишите сообщение...' name="" id={classes.textArea} cols="30" rows="1" />
+                    <textarea value={props.DialogsPage.messageText} onChange={changeText} onKeyDown={sendMessage} placeholder='Напишите сообщение...'id={classes.textArea} cols="30" rows="1" />
                 </div>
             </div>
 

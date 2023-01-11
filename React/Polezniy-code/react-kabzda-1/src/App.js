@@ -22,7 +22,10 @@ const App = (props) => {
             dispatch = {props.dispatch}
 
             />}/>
-            <Route path="/dialogs*" element={<Dialogs state= { props.state.DialogsPage}/>}/>
+            <Route path="/dialogs*" element={<Dialogs 
+            DialogsPage = { props.state.DialogsPage}
+            dispatch = {props.dispatch}
+            />}/>
         </Routes>
         </div>
     </div>
