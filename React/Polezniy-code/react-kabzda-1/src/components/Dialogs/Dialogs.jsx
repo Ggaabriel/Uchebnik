@@ -1,5 +1,5 @@
 import React from 'react';
-import { messageAddCreator, newMessageTextCreator } from '../../redux/state';
+import { messageAddCreator, newMessageTextCreator } from '../../redux/DialogsReduser';
 import classes from './Dialogs.module.css'
 import Message from './messages/Message';
 import Users from './Users/Users';

@@ -1,3 +1,5 @@
+import { DialogsReduser } from "./DialogsReduser";
+import {ProfileReduser} from "./ProfileReduser"
 
 let store = {
     state:{
@@ -28,46 +30,15 @@ let store = {
 
     },
     dispatch(action){
-        if(action.type === ADD_POST){
-            let newPost = {
-            id: 5,
-            message: this.state.ProfilePage.newPostText,
-            likes: 0
-        }
-        this.state.ProfilePage.posts.push(newPost)
-        this.state.ProfilePage.newPostText = "";
+        this.state.profilePage = ProfileReduser(this.state.ProfilePage, action);
+        this.state.DialogsPage = DialogsReduser(this.state.DialogsPage, action);
         this.reRender(this.state);
-        }
-        else if(action.type === UPDATE_POST_TEXT){
-            this.state.ProfilePage.newPostText = action.newText;
-            this.reRender(this.state);
-        }
-        else if(action.type === MESSAGE_ADD){
-            let message = {
-                id: 3,
-                message:this.state.DialogsPage.messageText
-            }
-            this.state.DialogsPage.messages.push(message);
-            this.state.DialogsPage.messageText = '';
-            this.reRender(this.state)
-        }
-        else if(action.type === NEW_MESSAGE_TEXT){
-            this.state.DialogsPage.messageText = action.messageText;
-            this.reRender(this.state);
-        }
+    
     },
     subscribe(observer) {
         this.reRender = observer;
     }
 }
-const ADD_POST = 'ADD-POST';
-const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
-const MESSAGE_ADD = 'MESSAGE-ADD';
-const NEW_MESSAGE_TEXT = 'NEW-MESSAGE-TEXT'
-export const addPostActionCreator = () => ({type: ADD_POST});
-export const updatePostTextActionCreator = (newText) => ({type: UPDATE_POST_TEXT, newText: newText})
-export const messageAddCreator = () => ({type: MESSAGE_ADD});
-export const newMessageTextCreator = (messageText) => ({type: NEW_MESSAGE_TEXT, messageText: messageText});
 
 
 window.store = store;
