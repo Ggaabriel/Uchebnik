@@ -3,9 +3,9 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Dialogs from './components/Dialogs/Dialogs';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Profile from './components/Profile/Profile';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
 const App = (props) => {
@@ -17,15 +17,8 @@ const App = (props) => {
         
         <div className='wrapper-content'>
         <Routes>
-            <Route path="/profile" element={<Profile 
-            ProfilePage= { props.state.ProfilePage} 
-            dispatch = {props.dispatch}
-
-            />}/>
-            <Route path="/dialogs*" element={<Dialogs 
-            DialogsPage = { props.state.DialogsPage}
-            dispatch = {props.dispatch}
-            />}/>
+            <Route path="/profile" element={<Profile store = {props.store} />}/>
+            <Route path="/dialogs*" element={<DialogsContainer store = {props.store} />}/>
         </Routes>
         </div>
     </div>

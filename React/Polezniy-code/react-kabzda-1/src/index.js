@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './redux/state.js'
+import store from './redux/redux-store.js'
 
 
 
@@ -12,13 +12,16 @@ let reRender = (state) => {
     
     root.render(
         <React.StrictMode>
-            <App state={state} dispatch={store.dispatch.bind(store)}/>
+            <App state={state} store={store}/>
         </React.StrictMode>
     );
 }
-reRender(store.state)
+reRender(store.getState())
 
-store.subscribe(reRender);
+store.subscribe(()=>{
+    let state = store.getState();
+    reRender(state);
+});
 
 
 

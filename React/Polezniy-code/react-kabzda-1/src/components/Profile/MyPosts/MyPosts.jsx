@@ -1,12 +1,17 @@
 import React from 'react';
-import { addPostActionCreator, updatePostTextActionCreator } from '../../../redux/ProfileReduser';
-import classes from "./MyPosts.module.css";
 import Post from './Post/Post';
 
 const MyPosts = (props) => {
     let postItems = props.posts.map(elem => <Post id={elem.id} message={elem.message} likes={elem.likes} />)
     let newLink = React.createRef();
-
+    
+    const addPost = () => {
+        props.addPost()
+    }
+    const updatePostText = () => {
+        let newText = newLink.current.value;
+        props.updatePostText(newText);
+    }
     return (
         <div>
             <span>ava + description</span>
@@ -14,24 +19,10 @@ const MyPosts = (props) => {
                 <span>My posts</span>
                 <div>
                     <textarea 
-                        
-                        onChange={
-                            () => {
-                                let newText = newLink.current.value;
-                                props.dispatch(updatePostTextActionCreator(newText));
-                            }
-                        }
-                        ref={newLink} name="" id="" cols="15" rows="2" value={props.ProfilePage.newPostText}
+                        onChange={updatePostText}
+                        ref={newLink} name="" id="" cols="15" rows="2" value={props.newPostText}
                     />
-                    <button
-                        onClick={
-                            () => {
-                                props.dispatch(addPostActionCreator());
-                                
-                            }
-                        }
-                    >
-                        
+                    <button onClick={addPost}>
                         add Post
                     </button>
                 </div>

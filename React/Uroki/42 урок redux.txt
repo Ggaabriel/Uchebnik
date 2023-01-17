@@ -1,0 +1,22 @@
+чтобы сделать функцию которая возвращает внутри объект мы пишем там:
+let reducers = combineRedicers({});
+
+чтобы установить редакс пишем в консоли npm install redux --save
+-создаем файл redux-store.js в нем делаем let state = createStore(*reducers);
+-reducers - это наши редюсеры
+-создаем переменную let reducers = combineReducers({
+	ProfilePage: ProfileReduser,
+    	DialogsPage: DialogsReduser
+})
+-щас у нас не лежит нигде логика
+-поэтому в редюсерах мы делаем let initialState = {
+тут инфа
+}
+-в самом редюсере делаем чтобы наш state = initialState
+
+-теперь у нас проблема что наш store при каком либо изменении возвращает state а 
+редаксовский не возвращает поэтому мы в subscribe делаем безымянную функцию внутри нее делаем стэйт и передаем перерисовке
+store.subscribe(()=>{
+    let state = store.getState();
+    reRender(state);
+});

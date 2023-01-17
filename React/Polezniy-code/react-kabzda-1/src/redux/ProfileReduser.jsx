@@ -1,8 +1,17 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
 
+let initialState = {
+    posts:[
+        {id: 1, message: 'I love bebra', likes: 4 },
+        {id: 2, message: 'fuck the police!', likes: 100 },
+        {id: 3, message: 'oh shit, here we go again', likes: 0 },
+        {id: 4, message: 'Grove Street - Home', likes: 99999 }
+    ],
+    newPostText:''
+}
 
-export const ProfileReduser = (state, action) => {
+export const ProfileReduser = (state = initialState, action) => {
     if (action.type === ADD_POST) {
         let newPost = {
             id: 5,
