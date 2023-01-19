@@ -1,3 +1,5 @@
+import { act } from "react-dom/test-utils";
+
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
 
@@ -12,19 +14,56 @@ let initialState = {
 }
 
 export const ProfileReduser = (state = initialState, action) => {
-    if (action.type === ADD_POST) {
-        let newPost = {
-            id: 5,
-            message: state.newPostText,
-            likes: 0
+    
+    switch (action.type) {
+        case ADD_POST:{
+            let newPost = {
+                id: 5,
+                message: state.newPostText,
+                likes: 0
+            }
+            return {
+                ...state,
+                posts:[...state.posts, newPost],
+                newPostText : ""
+            }
+            // let temporaryState = {...state}
+            // temporaryState.posts = [...state.posts];
+            // temporaryState.posts.push(newPost)
+            // temporaryState.newPostText = "";
+            // return temporaryState;
         }
-        state.posts.push(newPost)
-        state.newPostText = "";
+        case UPDATE_POST_TEXT:{
+            return{
+                ...state,
+                newPostText:action.newText,
+            }
+            // let temporaryState = {...state}
+            // temporaryState.newPostText = action.newText;
+            // return temporaryState;
+        }
+        default:
+            return state;
     }
-    else if (action.type === UPDATE_POST_TEXT) {
-        state.newPostText = action.newText;
-    }
-    return state
+
+    // if (action.type === ADD_POST) {
+    //     let newPost = {
+    //         id: 5,
+    //         message: state.newPostText,
+    //         likes: 0
+    //     }
+        
+    //     temporaryState.posts = [...state.posts];
+    //     temporaryState.posts.push(newPost)
+    //     temporaryState.newPostText = "";
+       
+    // }
+    // else if (action.type === UPDATE_POST_TEXT) {
+  
+    //     temporaryState.newPostText = action.newText;
+        
+    // }
+    // return temporaryState;
 }
 
 export const addPostActionCreator = () => ({ type: ADD_POST });

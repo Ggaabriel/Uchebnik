@@ -1,0 +1,28 @@
+react-redux = удобная библеотека которая за нас делает компоненты контейнеры
+чтобы ее установить пишем в терминале npm install react-redux --save
+теперь можно заменить наши storeContext.Provider на просто Provider
+            <Provider store={store}>
+                <App />
+            </Provider>
+а в компонентах контейнерах мы делаем 2 функции которые возвращают объект и пересоздаем компоненту используя connect в него
+передаем наши функции и через другие скобки тупую компоненту которую нужно отрисовать
+
+	а в наши функции кладем параметры которые мы передавали в пропсах 
+let mapStateToProps = (state) =>{
+    return{
+        posts:state.ProfilePage.posts,
+        newPostText:state.ProfilePage.newPostText
+    }
+}
+let mapDispatchToProps = (dispatch) =>{
+    return{
+        updatePostText:(newText) => {
+            dispatch(updatePostTextActionCreator(newText));
+        },
+        addPost:() => {
+            dispatch(addPostActionCreator());
+            
+        }
+    }
+}
+const MyPostsContainer = connect(mapStateToProps,mapDispatchToProps)(MyPosts)

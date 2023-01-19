@@ -9,7 +9,7 @@ const Profile = (props) => {
                 <img className={classes.image} src="https://asset.vg247.com/gta_san_andreas_X7ZIrfk.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/gta_san_andreas_X7ZIrfk.jpg" alt="" />
             </div>
            
-             <MyPostsContainer store ={props.store}/>
+             <MyPostsContainer />
         </main>
         
     );

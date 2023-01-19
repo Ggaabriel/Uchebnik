@@ -17,18 +17,48 @@ let initialState = {
 
 export const DialogsReduser = (state = initialState, action) => {
 
-    if (action.type === MESSAGE_ADD) {
-        let message = {
-            id: 3,
-            message: state.messageText
+    switch(action.type){
+        case MESSAGE_ADD:{
+            let message = {
+                id: 3,
+                message: state.messageText
+            }
+            return {
+                ...state,
+                messages: [...state.messages, message ],
+                messageText:''
+            };
+            //сверху более современный синтаксис
+            // temporaryState.messages = [...state.messages];
+            // temporaryState.messages.push(message);
+            // temporaryState.messageText = '';
+            // return temporaryState;
+            
         }
-        state.messages.push(message);
-        state.messageText = '';
+        case NEW_MESSAGE_TEXT:{
+            return{
+                ...state,
+                messageText:action.messageText
+            };
+            // temporaryState.messageText = action.messageText;
+            // return temporaryState
+        }
+        default:
+            return state;
     }
-    else if (action.type === NEW_MESSAGE_TEXT) {
-        state.messageText = action.messageText;
-    }
-    return state
+
+    // if (action.type === MESSAGE_ADD) {
+    //     let message = {
+    //         id: 3,
+    //         message: state.messageText
+    //     }
+    //     state.messages.push(message);
+    //     state.messageText = '';
+    // }
+    // else if (action.type === NEW_MESSAGE_TEXT) {
+    //     state.messageText = action.messageText;
+    // }
+    // return state
 }
 
 
