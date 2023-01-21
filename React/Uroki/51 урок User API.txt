@@ -1,0 +1,9 @@
+чтобы делать нам запросы на сервер мы будем пользоваться библеотекой axios
+чтобы ее скачать пишем npm install axios --save
+чтобы использовать все что нам нужно пишем 
+import * as axios from 'axios'
+далее мы модем использовать запросы get post и тд
+например axios.get(ссылка).then(elem=>{
+	что сделать после ответа
+	props.setUsers(response.data.items)
+})

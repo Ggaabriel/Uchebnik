@@ -1,5 +1,3 @@
-import { act } from "react-dom/test-utils";
-
 const ADD_POST = 'ADD-POST';
 const UPDATE_POST_TEXT = 'UPDATE-POST-TEXT';
 
