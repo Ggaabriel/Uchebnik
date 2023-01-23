@@ -14,7 +14,6 @@ const MyPosts = (props) => {
     }
     return (
         <div>
-            <span>ava + description</span>
             <div>
                 <span>My posts</span>
                 <div>
