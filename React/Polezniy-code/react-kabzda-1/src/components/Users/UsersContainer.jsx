@@ -1,9 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-
-import axios from 'axios';
 import Users from "./Users";
 import { followToggle, setCount, setPage, setUsers, tglreCup } from "../../redux/UserReduser";
+import { request } from "../../app/dal";
 
 
 
@@ -11,7 +10,8 @@ class UsersApi extends React.Component{
     componentDidMount(){
         if(this.props.users.length === 0){
             this.props.tglreCup()
-            axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.page}&count=${this.props.count}`).then((answer)=>{
+            request.GetUsers(this.props.page,this.props.count)
+            .then((answer)=>{
                 this.props.tglreCup()
                 this.props.setUsers(answer.data.items);
                 this.props.setCount(answer.data.totalCount)
@@ -22,7 +22,8 @@ class UsersApi extends React.Component{
     updatePage = (newPage) => {
         this.props.setPage(newPage);
         this.props.tglreCup()
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.page}&count=${this.props.count}`).then((answer)=>{
+        request.GetUsers(this.props.page,this.props.count)
+        .then((answer)=>{
             this.props.tglreCup()
             this.props.setUsers(answer.data.items);
         });

@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React from 'react';
 import { connect } from 'react-redux';
 import { addPost, setProfile, updatePostText } from '../../redux/ProfileReduser';
@@ -8,6 +7,7 @@ import Profile from './Profile';
 import classes from "./Profile.module.css";
 import { tglreCup } from "../../redux/UserReduser";
 import { useLocation, useNavigate, useParams} from 'react-router-dom';
+import { request } from '../../app/dal';
 
 
 // wrapper to use react router's v6 hooks in class component(to use HOC pattern, like in router v5)
@@ -35,7 +35,7 @@ class ProfileApi extends React.Component{
         if(!userId){
             userId = 2
         }
-        axios.get("https://social-network.samuraijs.com/api/1.0/profile/"+ userId)
+        request.GetProfile(userId)
         .then(answer => {
             tglreCup()
             this.props.setProfile(answer.data)
