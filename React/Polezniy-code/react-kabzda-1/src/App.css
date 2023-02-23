@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
 .wrapper{ 
     width: 1000px;
     margin: 0 auto;
@@ -11,7 +16,7 @@
 
 .wrapper-content{
     grid-area: profile;
-    background-color: greenyellow;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 
 }
 body{

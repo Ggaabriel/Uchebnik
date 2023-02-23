@@ -9,7 +9,6 @@
 .messageArea{
     position: sticky;
     bottom: 0;
-    background-color: blanchedalmond;
     padding: 15px 15px;
 }
 #textArea{
@@ -19,6 +18,12 @@
     resize: none;
     max-height: 100px;
    -off-padding:0;
+   border-radius: 10px;
+   border: 2px black solid;
+   background: none;
+}
+#textArea:hover{
+    color: red;
 }
 .messages{
     overflow: auto;

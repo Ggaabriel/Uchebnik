@@ -1,0 +1,3 @@
+thunk это action creator который передает не объект а функцию которая потом использует другие AC через dispatch()
+чтобы thunk работал и реакт не ругался нужно скачать библеотеку npm i redux-thunk --save
+потом мы пишем в store после reducers, applyMiddleware(thunk/thunkMiddleware)
