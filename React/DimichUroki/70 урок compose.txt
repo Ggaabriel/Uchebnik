@@ -1,0 +1,10 @@
+compose - функция которая заложена в redux помогает с функциями обертками или же контейнерами которые
+обволакивают нашу чистую компоненту, помогает она тем что в нее сверху вниз прописываются нашу функции оболочки
+и можно проследить где какие слои
+например:
+
+export default compose(
+	connect(mapStateToProps, {getUserProfile}),
+	withRouter,
+	withAuthRedirect
+)(ProfileContainer);

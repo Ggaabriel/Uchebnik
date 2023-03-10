@@ -1,0 +1,16 @@
+чтобы типизировать функцию мы делаем тип и в нем пишем что наша переменная это функция
+стрелочная или обычная что она принимает и что возвращает
+например
+type CategoriesProps = {
+	value: number;
+	onChangeCategory: (idx: number) => void; 
+}
+теперь теперь передаем нашей компоненте все
+const Categories: React.FC<CategoriesProps>
+
+чтобы типизировать event мы используем реактовский тип и внутри него пишем чей это евент
+например:
+event.ChangeEvent<HTMLInputElement> (наш ивент из инпута для примера модно див элемент и тд)
+
+onclick
+если это клик то event.MouseEvent<HTMLDivElement(на какой элемент клик)>

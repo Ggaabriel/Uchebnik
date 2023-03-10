@@ -1,0 +1,19 @@
+async await - позволяет сделать асинхронную функцию и тп последовательнными то есть синхронными
+когда мы пишем async function kok (){
+ await axios.get('www.siski-rediski.com')
+	.then((answer) => {
+		c.log('i`m answer:' + answer)
+	})
+	c.log('i`m faster then answer')
+}
+то думаем что then выполнится по логике быстрее чем следующий шаг
+но это не так сначала у нас высветится i`m faster then answer
+			  и лишь потом i`m answer:
+и благодаря async await у нас все приходит к взаимопониманию и последовательности и синхронности
+сначала будет i`m answer:
+ и лишь потом i`m faster then answer
+
+так же благодаря этому можно сократить запрос на сервер ведь благодаря await в переменную записывается answer из then
+	let serverKok = await axios.get('www.siski-rediski.com/users')
+в serverKok лежит ответ
+	c.log(server.Kok) // user1 user2 user3 
